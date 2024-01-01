@@ -1,5 +1,7 @@
 package JavaPgms;
 
+import java.util.ArrayList;
+
 public class ClassOne {
 	
 	int num=10;//instance
@@ -12,6 +14,7 @@ public class ClassOne {
 	public void method1() {
 		int num=58;//local
 		//System.out.println(num);
+		
 		
 		//arrays
 		int[] arr=new int[3];
