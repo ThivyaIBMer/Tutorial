@@ -6,11 +6,19 @@ public class TN implements Traffic,Interface2{
 		Traffic n=new TN();
 		n.blue();
 		
+		TN newobj=new TN();
+		newobj.test();
+		
+		
 		Interface2 i2=new TN();
 		i2.orange();
 
 	}
 
+	public void test() {
+		System.out.println("local class method");
+	}
+	
 	@Override
 	public void green() {
 		// TODO Auto-generated method stub

@@ -8,7 +8,7 @@ public class small_large_num {
 		int min=x[0];
 		
 		for(int i=0;i<x.length;i++) {
-			if(x[i]>min) {
+			if(x[i]<min) {
 				min=x[i];
 				
 			}
