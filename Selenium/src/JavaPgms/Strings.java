@@ -43,13 +43,13 @@ public class Strings {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Strings st=new Strings();
-		//st.substringTest();
+		st.substringTest();
 		st.compareTo_Test();
-		//st.comparingStrings();
-		//st.stringOperations();
-//		System.out.println(st.s);
-//		st.s=st.s.concat("k");
-//		System.out.println(st.s);
+		st.comparingStrings();
+		st.stringOperations();
+		System.out.println(st.s);
+		st.s=st.s.concat("k");
+		System.out.println(st.s);
 		
 		
 
