@@ -3,17 +3,29 @@ package JavaPgms;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import packageDemo.demo1;
 
 
 
-public class DateExamples {
+
+
+public class DateExamples   {
+	
 	int i;
 	String d;
-
+ protected int checkdefault=90;
+ 
+ protected void samplefun() {
+	 System.out.println("fun");
+ }
+	
 public void datesamples() {
 	Date d=new Date();
 	System.out.println(d.toString());
 
+	demo1 dh=new demo1();
+	dh.validateMethod();
+	
 	SimpleDateFormat sdf=new SimpleDateFormat("MM-dd-yyyy");
 	SimpleDateFormat sd=new SimpleDateFormat("MMM-dd-yyyy");
 	SimpleDateFormat sdf_h=new SimpleDateFormat("MMM-dd-yyyy hh:mm:ss");
@@ -36,6 +48,7 @@ public void calendarSamples() {
 		System.out.println(de.d);
 		de.datesamples();
 		de.calendarSamples();
+		
 		
 
 	}
