@@ -25,13 +25,20 @@ public class StaticVar {
 		System.out.println(city+" "+i);
 	}
 	
+	public int gtValue(int b) {
+		int a=b+10;
+		return a;
+		
+	}
 	public static void main(String[] args) {
 		
 		//StaticVar var=new StaticVar("Thivya","s2Street");
 		//var.getAddress();
 		
-//		StaticVar var1=new StaticVar("Pavithra","s3Street");
-//		var1.getAddress();
+		StaticVar var1=new StaticVar("Pavithra","s3Street");
+		var1.getAddress();
+		int c=var1.gtValue(30);
+		System.out.println(c);
 		
 		StaticVar.getAddress();
 	

@@ -24,6 +24,7 @@ public class ListExample {
 		arr.add("t1");
 		arr.add("t4");
 		arr.add(1,"t5");
+		
 		arr.remove("t1");
 		arr.add(1.90);
 		/*
@@ -52,6 +53,7 @@ public class ListExample {
 //     }
      System.out.println("*************");
      while (iterator.hasPrevious()) {
+    
          System.out.println("Value is : "
                             + iterator.previous());
      }
