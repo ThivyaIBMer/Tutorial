@@ -1,0 +1,79 @@
+//Locators
+id
+By.id("APjFqb");
+
+className
+By.className("classnmae");
+
+name
+By.name("q")
+
+linkText
+By.linkText("https://www.orangehrm.com/");
+
+PartiallinkText
+By.partialLinkText("orangehrm.com/");
+
+tagName
+By.tagName("input");
+
+cssSelector
+
+By.cssSelector("#APjFqb");
+By.cssSelector(".classnmae");
+
+
+(or)
+By.cssSelector("tagName[attribute='value']");//syntax
+By.cssSelector("textarea[id='APjFqb']");
+
+By.cssSelector("tagName#id");//syntax
+By.cssSelector("textarea#APjFqb");
+
+By.cssSelector("tagName.className");//syntax
+By.cssSelector("textarea.classnmae");
+
+
+By.cssSelector("tagName.className[attribute=value]");//syntax
+By.cssSelector("textarea.classnmae[name='ria']");
+
+By.cssSelector("tagName[attribute='value'] tagName[attribute='value']");//syntax
+or
+By.cssSelector("tagName[attribute='value']>tagName[attribute='value']");//syntax
+
+table[id^='tabl'] //starts-with
+table[id*='le'] //anything in text
+table[id$='1'] //ends-with
+
+child
+=====
+ul[class='nav navbar-nav'] li:first-child
+table[id='table1'] tbody tr:nth-of-type(4)
+table[id='table1'] tbody tr:last-child
+table[id='table1'] tbody tr + tr
+
+xpath
+======
+By.xpath("//tagName[@attribute='value']");//syntax
+By.xpath("//textarea[@id='APjFqb']");
+By.xpath("//span[text()='Time']");//xpath using text function
+//label[contains(text(), 'User')]  //xpath using contains with text
+//label[contains(@class, 'oxd')]  //xpath using contains with attribute
+//button[@type='submit' or @class='oxd-button'] //xpath using OR
+//button[@type='submit' and @class='oxd-button'] //xpath using AND
+(//label[starts-with(@class,'oxd')])[1] //xpath using starts-with
+//table[@id='table1']//tbody/tr/td[position() mod 2 =0] //xpath using position
+//*[@type='text']//following::input
+//*[@type='text']//preceding::input
+//*[@type='text']//ancestor::input
+(//div[contains(@class,'orangehrm-login-logo')])[2]/child::img
+//table[@id='table1']//tbody/tr/following-sibling::tr[3]
+//table[@id='table1']//tbody/tr/preceding-sibling::tr[1]
+//*[@type='text']//descendant::*
+Parent
+======
+//table[@id='table1']//tbody/tr/following-sibling::tr[3]/preceding-sibling::tr[1]/.. 
+or
+//table[@id='table1']//tbody/tr/following-sibling::tr[3]/preceding-sibling::tr[1]/parent::*
+
+

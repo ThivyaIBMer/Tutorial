@@ -1,6 +1,7 @@
 package JavaPgms;
 
-public interface Traffic {
+public interface Traffic extends Interface2 {
+	
 	
 	public static final int i = 10;
 	
